@@ -33,32 +33,3 @@ function checkConnection() {
 }
  
 checkConnection();
-
-cordova.plugins.diagnostic.isWifiAvailable(function(available){
-    console.log("WiFi is " + (available ? "available" : "not available"));
-}, function(error){
-    console.error("The following error occurred: "+error);
-});
-cordova.plugins.diagnostic.isLocationAvailable(function(available){
-    console.log("Location is " + (available ? "available" : "not available"));
-}, function(error){
-    console.error("The following error occurred: "+error);
-});
-
-var text = "Hello World!";
-
-cordova.plugins.clipboard.copy(text);
-
-cordova.plugins.clipboard.paste(function (text) { console.log(text); });
-
-var serviceType = "ssdp:all";
-    
-    var success = function(devices) {
-        console.log(devices);
-    }
-    
-    var failure = function() {
-        console.log("Error calling Service Discovery Plugin");
-    }
-    
-    serviceDiscovery.getNetworkServices(serviceType, success, failure);
