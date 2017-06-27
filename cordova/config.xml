@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="example.test1" version="0.1">
+  <name>Test1</name>
+  <description>
+    Testing Tabris App
+  </description>
+  <author email="">
+    Jack Daniel
+  </author>
+    <plugin name="cordova-plugin-network-information" />
+    <plugin name="cordova-plugin-discovery" />
+    <plugin name="cordova-universal-clipboard" />
+    <plugin name="cordova.plugins.diagnostic" />
+
+</widget>
